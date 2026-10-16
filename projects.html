@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arlene Garcia's Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        project-card {
+            display: block;
+            border: 1px solid black;
+        }
+    </style>    
 </head>
 <body>
-    <noscript>
-        <p> This website works best with JavaScript enabled.</p>
-    </noscript>
     <header>
         <div> <span>Arlene Garcia</span>
         </div>
@@ -25,54 +29,56 @@
             <h1>My Projects</h1>
             <p>Here are some of the projects I have worked on!</p>
         </section>
-        <article>
-            <h2>Personal Study Session Tracker</h2>
-            <picture>
-                <source srcset="images/studytracker.webp" type="image/webp">
-                <img src="images/studytracker.jpg" alt="Study Tracker Screenshot">
-            </picture>
-            <h3>Description</h3>
-            <p>This is a simple study session tracker that helps me keep track of my study time and focus.</p>
-            <h3>Technologies Used</h3>
-            <ul>
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>Supabase</li>
-            </ul>
-            <a href="https://github.com/arlenecse/study-time">View on GitHub</a>
-        </article>
-        <article>
-            <h2>Recipe Card Manager</h2>
-            <picture>
-                <source srcset="images/recipecard.webp" type="image/webp">
-                <img src="images/recipecard.jpg" alt="Recipe Card Manager Screenshot">
-            </picture>
-            <h3>Description</h3>
-            <p>I worked on a project team to create a recipe card manager that allows users to store and organize their favorite recipes.</p>
-            <h3>Technologies Used</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-            <a href="https://github.com/cse110-sp25-group8/final-project">View on GitHub</a>
-        </article>
-        <article>
-            <h2>H&M Recommendation System</h2>
-            <picture>
-                <source srcset="images/recipecard.webp" type="image/webp">
-                <img src="images/recipecard.jpg" alt="H&M Recommendation System Screenshot">
-            </picture>
-            <h3>Description</h3>
-            <p>I worked on a project team to create a recommendation system to predict what items users are likely to purchase.</p>
-            <h3>Technologies Used</h3>
-            <ul>
-                <li>Python</li>
-                <li>Pandas</li>
-                <li>scikit-learn</li>
-            </ul>
-            <a href="https://github.com/arlenecse/Fashion-Forward">View on GitHub</a>
-        </article>
+        <section>
+            <project-card id="project1">
+                <h2>Personal Study Session Tracker</h2>
+                <picture>
+                    <source srcset="images/project1.jpg" type="image/jpeg" width="200" height="200">
+                    <img src="images/project1.jpg" alt="Study Tracker Screenshot">
+                </picture>
+                <h3>Description</h3>
+                <p>This is a simple study session tracker that helps me keep track of my study time and focus.</p>
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Supabase</li>
+                </ul>
+                <a href="https://github.com/arlenecse/study-time">View on GitHub</a>
+            </project-card>
+            <project-card id="project2">
+                <h2>Recipe Card Manager</h2>
+                <picture>
+                    <source srcset="images/project2.png" type="image/png" width="200" height="200">
+                    <img src="images/project2.png" alt="Recipe Card Manager Screenshot">
+                </picture>
+                <h3>Description</h3>
+                <p>I worked on a project team to create a recipe card manager that allows users to store and organize their favorite recipes.</p>
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <a href="https://github.com/cse110-sp25-group8/final-project">View on GitHub</a>
+            </project-card>
+            <project-card id="project3">
+                <h2>H&M Recommendation System</h2>
+                <picture>
+                    <source srcset="images/project3.jpg" type="image/jpeg" width="200" height="200">
+                    <img src="images/project3.jpg" alt="H&M Recommendation System Screenshot">
+                </picture>
+                <h3>Description</h3>
+                <p>I worked on a project team to create a recommendation system to predict what items users are likely to purchase.</p>
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>scikit-learn</li>
+                </ul>
+                <a href="https://github.com/arlenecse/Fashion-Forward">View on GitHub</a>
+            </project-card>
+        </section>
     </main>
     <footer>
         <p>Thank you for stopping by!</p>
@@ -95,5 +101,8 @@
             </ul>
         </section>
     </footer>
+    <noscript>
+        <p> This website works best with JavaScript enabled.</p>
+    </noscript>
 </body>
 </html>
